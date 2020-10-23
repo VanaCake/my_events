@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">my_events</string>
+    <string name="events_title">Vanessa\'s Weekly Events</string>
+    <string name="timeframe">October 19 - October 23</string>
+</resources>

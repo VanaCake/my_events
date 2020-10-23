@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/padding"
+    android:paddingTop="@dimen/padding"
+    android:paddingRight="@dimen/padding"
+    android:paddingBottom="@dimen/padding"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/events_titleTV"
+        android:layout_width="337dp"
+        android:layout_height="102dp"
+        android:backgroundTint="#D17FEF"
+        android:fontFamily="@font/abril_fatface"
+        android:text="@string/events_title"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timeframeTV"
+        android:layout_width="341dp"
+        android:layout_height="61dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#D17FEF"
+        android:fontFamily="@font/abril_fatface"
+        android:text="@string/timeframe"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/events_titleTV"
+        app:layout_constraintStart_toStartOf="@+id/events_titleTV"
+        app:layout_constraintTop_toBottomOf="@+id/events_titleTV" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/event_listRV"
+        android:layout_width="324dp"
+        android:layout_height="304dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/events_titleTV"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
